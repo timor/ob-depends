@@ -45,7 +45,8 @@
 				 ("id" (let ((loc (org-find-entry-with-id val)))
 					 (if loc
 					     (list :subtree loc)
-					   (user-error "cannot depend on unknown entry %s" val))))))))))
+					   (user-error "cannot depend on unknown entry %s" val))))
+				 (t (user-error "unknown :depends spec: %s" d))))))))
 	(loop for spec in blocks when spec do
 	      (let ((loc (second spec))
 		    (type (first spec)))
