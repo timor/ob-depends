@@ -18,7 +18,7 @@
 	  (progn
 	    (org-babel-previous-src-block)
 	    (point))
-	(user-error nil))))))
+	(user-error nil)))))
 
 (defun org-babel-execute-src-block-with-dependencies (&optional ignore-serial)
   "Execute all :depends arguments, then execute src block."
