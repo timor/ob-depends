@@ -62,3 +62,5 @@
    :exec-depend))
 
 (add-hook 'org-ctrl-c-ctrl-c-hook 'org-babel-depends-ctrl-c-ctrl-c-hook)
+
+(provide 'ob-depends)
